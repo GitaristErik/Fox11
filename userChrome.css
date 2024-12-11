@@ -1,19 +1,41 @@
 /* ############# Required files ############## */
 /* coment/uncoment  to enable/disable*/
 
-/* @import url('components/mica_support.css'); */ /* Deprecate in Firefox 117  */
-/* @import url('components/hide_alltabs_button.css'); */
+/* @import url('components/mica_support.css'); */
+/* Deprecate in Firefox 117  */
+@import url('components/hide_alltabs_button.css');
 @import url('components/autohide_bookmarks_and_main_toolbars.css');
-@import url('components/urlbar_centered_text.css');
+/* @import url('components/urlbar_centered_text.css'); */
 @import url('components/round_caption_buttons.css');
 @import url('components/toolbars.css');
-@import url('components/vivaldifox.css');
-/* @import url('components/adaptative_tab_bar_color.css'); */
+/* @import url('components/autohide_sidebar.css'); */
+@import url('components/button_effect_scale_onclick.css');
+@import url('components/button_effect_scale_onhover.css');
+/* @import url('components/combined_favicon_and_tab_close_button.css'); */
+/* @import url('components/vivaldifox.css'); */
+@import url('components/adaptative_tab_bar_color.css');
 
 
 /* ############# Personal Settings ############## */
-#navigator-toolbox{--uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.1s */}
-:root{   
-   --general-border-radius: 8px !important;
-   --auto-general-color: var(--lwt-accent-color) !important;
+#navigator-toolbox {
+    /* The toolbar is hidden after 0.1s */
+    --uc-autohide-toolbar-delay: 100ms;
 }
+
+:root {
+    --general-border-radius: 8px !important;
+    --auto-general-color: var(--lwt-accent-color) !important;
+}
+
+/* ############# Firefox Auto-hide Navbar Feature ############## */
+/* #navigator-toolbox:not(:hover) > #titlebar,
+#navigator-toolbox:has(#PersonalToolbar:hover) > #titlebar,
+#navigator-toolbox:not(:hover) > #nav-bar,
+#navigator-toolbox:has(#PersonalToolbar:hover) > #nav-bar {
+  margin-top: -36px;
+  opacity: 0;
+}
+
+#titlebar, #nav-bar {
+  transition: all 0.3s ease-in-out !important;
+} */
